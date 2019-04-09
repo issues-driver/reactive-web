@@ -23,10 +23,7 @@ const MoviesTable = props => {
     {
       action: "like",
       content: movie => (
-        <Like
-          liked={movie.liked}
-          onLiked={() => this.props.onLike({ movie })}
-        />
+        <Like liked={movie.liked} onLiked={() => onLike({ movie })} />
       )
     },
     {
@@ -35,7 +32,7 @@ const MoviesTable = props => {
         <button
           className="btn btn-danger btn-sm"
           type="button"
-          onClick={() => this.props.onDelete(movie._id)}
+          onClick={() => onDelete(movie._id)}
         >
           Delete
         </button>

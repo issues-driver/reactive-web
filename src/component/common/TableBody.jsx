@@ -4,7 +4,7 @@ import _ from "lodash";
 class TableBody extends Component {
   renderCell = (item, cell) => {
     if (cell.action) {
-      cell.content(item);
+      return cell.content(item);
     } else {
       return _.get(item, cell.field);
     }
