@@ -1,8 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This Project Required Environment：
+  `Node.js`<br>
+  Download address: [https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/).<br>
+  Suggestion download Long term support version.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+## `npm i`
+  Local install project required dependency package.
 
 ### `npm start`
 
