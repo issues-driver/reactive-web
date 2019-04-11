@@ -1,12 +1,15 @@
 import React from "react";
 import Like from "./common/Like";
 import Table from "./common/Table";
+import { Link } from "react-router-dom";
 
 const MoviesTable = props => {
   const columns = [
     {
       field: "title",
-      name: "Title"
+      name: "Title",
+      action: "link",
+      content: movie => <Link to={`/movie/${movie._id}`}>{movie.title}</Link>
     },
     {
       field: "genre.name",
